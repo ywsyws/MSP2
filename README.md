@@ -2,10 +2,10 @@
 
 ## Note to set up docker
 to build an image  
-```docker build -t <image name>```
+```docker build -t <image name> .```
 
 to run a container
-```docker container run -it --name <container name> -p 8003:5000 -v "$(PWD):/workspace" -d <image name>  ```  
+```docker container run -it --name <container name> -p 8003:5000 -v "$(PWD):/workspace" -d <image name>```  
 e.g.: docker container run (--rm) -it --name "azure-ml" -p 8003:5000 -v "$(PWD):/workspace" (-d) jupyter-python  
 explaination: containers name / hostPC port: service port in container / $(PWD) = projects directory
 
